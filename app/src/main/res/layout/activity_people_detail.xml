@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:background="@color/colorBackground">
+
+    <include layout="@layout/toolbar" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/materialCardView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:contentPadding="8dp">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:textStyle="bold"
+                        android:text="@string/title_data"
+                        tools:text="Dados" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Altura: 172" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtMass"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Peso: 77" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtHairColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Cor do cabelo: blond" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtSkinColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Cor da pele: fair" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtEyeColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Cor dos olhos: blue" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtBirthYear"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Ano de aniversario: 19BBY" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/txtGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Genero: male" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:backgroundTint="@color/colorPrimary"
+                app:contentPadding="8dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:animateLayoutChanges="true">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/title_homeworld"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                            android:textStyle="bold"
+                            tools:text="Terra Natal" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtNameHomeWorld"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Nome: Tatooine" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtRotationPeriod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Período de rotação: 77" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtOrbitalPeriod"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Período orbital: 304" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtDiameter"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Diametro: 10465" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtClimate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Clima: arid" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtGravity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Gravity: 1 standard" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtTerrain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="Terreno: desert" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/txtPopulation"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            tools:text="População: 200000" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <include
+                        layout="@layout/layout_loading"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true" />
+
+                    <include
+                        layout="@layout/layout_no_internet"
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

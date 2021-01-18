@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MayTheForceBeWith_MarceloAlban</string>
+
+    <string name="activity_main">STAR WARS</string>
+    <string name="activity_favorite">FAVORITOS</string>
+    <string name="activity_detail">DETALHES</string>
+
+    <string name="menu_search">Digite para pesquisar</string>
+    <string name="menu_favorite">Favoritos</string>
+
+    <string name="title_data">Dados</string>
+    <string name="label_height">Altura: %1$s</string>
+    <string name="label_mass">Peso: %1$s</string>
+    <string name="label_hair_color">Cor do cabelo: %1$s</string>
+    <string name="label_skin_color">Cor da pele: %1$s</string>
+    <string name="label_eye_color">Cor dos olhos: %1$s</string>
+    <string name="label_birth_year">Ano de nascimento: %1$s</string>
+    <string name="label_gender">Gênero: %1$s</string>
+
+    <string name="title_homeworld">Planeta Natal</string>
+    <string name="label_rotation_period">Período de rotação: %1$s</string>
+    <string name="label_orbital_period">Período orbital: %1$s</string>
+    <string name="label_diameter">Diametro: %1$s</string>
+    <string name="label_climate">Clima: %1$s</string>
+    <string name="label_gravity">Gravidade: %1$s</string>
+    <string name="label_terrain">Terreno: %1$s</string>
+    <string name="label_population">População: %1$s</string>
+
+    <string name="message_no_data">Sem favoritos</string>
+    <string name="message_item_favorited">%1$s adicionado(a) dos favoritos</string>
+    <string name="message_item_remove_favorite">%1$s removido(a) dos favoritos</string>
+</resources>
